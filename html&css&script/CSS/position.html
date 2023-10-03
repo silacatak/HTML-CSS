@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+             div{        /*z-index öne veya arkada durmasını sağlar*/
+            border-style: dashed;
+            border-color: brown;
+             }
+             #küçük{
+                
+                width: 100px;
+                height: 50px;
+                background-color: rgb(154, 159, 230);
+                position: relative;
+                left: 2px;
+                top: 10px;
+             }
+             #küçükiç{
+                  
+                width: 100px;
+                height: 50px;
+                background-color: rgb(208, 252, 16);
+                position: relative;
+                left: 5px;
+                top: 5px;
+                z-index: -1;
+             }
+             #büyük{
+                width: 200px;
+                height: 100px;
+                background-color: hotpink;
+                position: fixed;
+                right: 10px;
+                bottom: 10px;
+                z-index: 3;
+             }
+             #büyükiç
+             {
+                width: 100px;
+                height: 50px;
+                background-color: rgb(84, 235, 104);
+                position: absolute;
+                left: 20px;
+                bottom: 20px;
+             }
+          
+        </style>
+    </head>
+    <body>
+        <div id="büyük">
+           <div id="büyükiç">
+
+           </div>
+        </div>
+        <div id="küçük">
+            <div id="küçükiç">
+
+            </div>
+        </div>
+    </body>
+</html>

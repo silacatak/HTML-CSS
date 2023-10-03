@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Form oluşturma</title>
+    </head>
+    <body>
+        <h1>Üye Kayıt Formu</h1>
+        <form name="Kayıt" action="kayit.php" method="get" autocomplete="on"> <!--get verilerin tarayıcıda görünür şekilde iletilmesini sağlar
+                                                               post ise tarayıcı da görünmeden iletir.-->
+            Ad Soyad: <input type="text" name="adsoyad" placeholder="Sıla Çatak">
+            <br>
+            Okul Adı: <input type="text" name="okuladi" id="idokuladi" size="30" maxlength="40" required placeholder="Celal Bayar Üniversitesi">
+            <br>
+            Email:<input type="email" name="mail" id="email"  required>
+            <br>
+            Web Siteniz: <input type="url" name="url" autofocus> <!--autofocus ile imlecin sayfa açıldığında orda yanıp sönmesini sağlarsın-->
+            <br>
+            Yaşınız: <input type="number" name="yasiniz" id="yasiniz" required>
+
+            <input type="submit" >
+            <input type="reset" value="Temizle">  <!--size 30 karakter kabul ettiğini,maxlenght ise 40 karakter girilebilceğini gösterir 
+                                      ama burdaki 10 karakter kabul edilmez gözükmez
+                                       required ise bu kutucuğun doldurulmasının zorunlu olduğunu gösterir
+                                      submit: forma girilen verileri onaylamak için kullanıır
+                                      iptal etmek için reset kullanılır type de -->
+        </form>
+    </body>
+</html>

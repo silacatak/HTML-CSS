@@ -1,0 +1,114 @@
+/* rotate:döndürme
+   skew:çarpıtma
+   scale:ölçeklendirme 
+   /* bir etiketin boyutunu attırma ve azlatmak*/ /* deg: derece kısaltması*/
+ /* matrix tüm hepsini birlikte kullanmayı sağlar*/
+
+
+.rotate p{
+    width: 60px;
+    height: 100px;
+    background-color: rgb(230, 176, 107);
+    transform: rotate(20deg);
+}
+
+.rotateX p{
+    width: 60px;
+    height: 100px;
+    background-color: rgb(218, 141, 40);
+    transform: rotateX(80deg); /* üstten ve alttan daraltıyor*/
+}
+
+.rotateY p{
+    width: 60px;
+    height: 100px;
+    background-color: rgb(218, 141, 40);
+    transform: rotateY(60deg); /* sağdan ve soldan daraltıyor*/
+}
+
+.scale p{
+    font-size: 8px;
+    width: 60px;
+    height: 100px;
+    background-color: rgb(235, 115, 225);
+    transform: scale(1.5,1.5); 
+    float: left;
+    margin: 5px;
+}
+
+.scaleX p{
+    font-size: 12px;
+    width: 60px;
+    height: 100px;
+    background-color: rgb(177, 116, 172);
+    transform: scale(0.9); 
+    float: left;
+    margin: 5px;
+}
+
+
+.scaleY p{
+    font-size: 12px;
+    width: 60px;
+    height: 100px;
+    background-color: rgb(177, 116, 172);
+    transform: scale(1.9);
+    float: left; 
+    margin: 5px;
+    
+}
+
+.skew p{
+    font-size: 10px;
+    width: 80px;
+    height: 90px;
+    background-color: rgb(107, 161, 233);
+    transform: skew(20deg);
+    margin: 5px;
+}
+
+
+.skewX p{
+    font-size: 10px;
+    width: 80px;
+    height: 90px;
+    background-color: rgb(42, 94, 161);
+    transform: skewX(20deg);
+    margin: 5px;
+}
+
+
+.skewY p{
+    font-size: 10px;
+    width: 80px;
+    height: 90px;
+    background-color: rgb(107, 161, 233);
+    transform: skewY(20deg);
+    margin: 5px;
+}
+
+.translate1 p{
+    font-size: 10px;
+    width: 80px;
+    height: 90px;
+    background-color: rgb(224, 87, 87);
+    transform: translate(20px,50px);
+    margin: 5px;
+}
+
+.translate2 p{
+    font-size: 10px;
+    width: 80px;
+    height: 90px;
+    background-color: rgb(219, 56, 146);
+    transform: translateX(60PX);
+    margin: 5px;
+}
+.translate3 p{
+    font-size: 10px;
+    width: 80px;
+    height: 90px;
+    background-color: rgb(219, 56, 146);
+    transform: translateY(10PX);
+    margin: 5px;
+}
